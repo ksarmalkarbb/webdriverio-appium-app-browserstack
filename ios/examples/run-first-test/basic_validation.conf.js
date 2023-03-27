@@ -15,7 +15,9 @@ exports.config = {
     device: 'iPhone 13 Pro',
     os_version: "15",
     app: process.env.BROWSERSTACK_APP_ID || 'bs://1b44c590f80ee99353c924218b16db44e09f4148',
-    'browserstack.debug': true
+    'browserstack.debug': true,
+    'browserstack.resignApp': false,
+    'browserstack.autoAcceptAlerts': true,
   }],
 
   logLevel: 'info',
